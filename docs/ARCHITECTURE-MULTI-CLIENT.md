@@ -46,3 +46,11 @@ Platform: bootstrap, packaging, deployment, updates.
 Core/app contracts are versioned and apps update independently. Core changes preserve a documented compatibility window.
 
 PHP, WordPress, React, Tauri, Python, TypeScript, PostgreSQL and other current technologies are implementation choices, not permanent business-domain contracts unless intrinsically required. Technology may evolve without forcing customers onto another delivery channel or rewriting the business engine.
+
+## Engineering efficiency rule
+
+Keep implementations short, practical, efficient, testable and production-usable. Prefer the smallest design that preserves the required business boundary. Do not add abstraction, services, dependencies, runtimes or infrastructure solely for hypothetical future use.
+
+Optimize for low coupling and high cohesion rather than file/class count. Reuse stable contracts; avoid duplicate models and adapters. Load optional capabilities only when enabled. Performance-sensitive paths should avoid unnecessary network calls, serialization, database queries and framework bootstrapping.
+
+Future-readiness means replaceable boundaries, versioned contracts, portable data and explicit capabilities — not speculative complexity. New technology should normally replace an adapter or implementation rather than force a rewrite of domain/application logic.
