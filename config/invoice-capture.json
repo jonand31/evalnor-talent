@@ -1,0 +1,24 @@
+{
+  "schema": "evalnor.invoice-link-consumer/v1",
+  "provider": "evalnor-invoice-capture",
+  "app_id": "evalnor-talent",
+  "optional": true,
+  "core_required": false,
+  "entity_types": [
+    "job",
+    "placement",
+    "onboarding",
+    "vendor",
+    "hr-expense"
+  ],
+  "permissions": {
+    "view": "invoice.links.read",
+    "manage": "invoice.links.manage"
+  },
+  "behavior": {
+    "direct_invoice_table_access": false,
+    "preserve_links_when_module_disabled": true,
+    "delete_invoice_on_unlink": false,
+    "organization_scope_required": true
+  }
+}
