@@ -1,0 +1,38 @@
+{
+  "schema": "evalnor.competitive-gap/v1",
+  "app_id": "evalnor-talent",
+  "reviewed_at": "2026-10-02",
+  "principle": "benchmark-informed; original Evalnor implementation",
+  "candidates": [
+    {
+      "key": "career-site",
+      "status": "planned-review",
+      "optional": true,
+      "module_safe": true
+    },
+    {
+      "key": "jobboard-connectors",
+      "status": "planned-review",
+      "optional": true,
+      "module_safe": true
+    },
+    {
+      "key": "employee-self-service",
+      "status": "planned-review",
+      "optional": true,
+      "module_safe": true
+    },
+    {
+      "key": "onboarding-protocols",
+      "status": "planned-review",
+      "optional": true,
+      "module_safe": true
+    },
+    {
+      "key": "hr-reporting",
+      "status": "planned-review",
+      "optional": true,
+      "module_safe": true
+    }
+  ]
+}
