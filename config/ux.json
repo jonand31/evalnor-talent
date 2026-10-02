@@ -1,0 +1,35 @@
+{
+  "schema": "evalnor.ux/v1",
+  "app_id": "evalnor-talent",
+  "design_system": "evalnor-core/ui",
+  "locales": [
+    "fr",
+    "en",
+    "es"
+  ],
+  "responsive": [
+    "mobile",
+    "tablet",
+    "desktop",
+    "large"
+  ],
+  "accessibility": {
+    "keyboard": true,
+    "reduced_motion": true,
+    "visible_focus": true
+  },
+  "home": "pipeline",
+  "primary": [
+    "pipeline",
+    "candidates",
+    "jobs",
+    "clients",
+    "tasks"
+  ],
+  "mobile_priority": [
+    "pipeline",
+    "tasks",
+    "candidates"
+  ],
+  "density": "comfortable"
+}
