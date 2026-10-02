@@ -1,0 +1,59 @@
+{
+  "schema": "evalnor.modules/v1",
+  "app_id": "evalnor-talent",
+  "policy": {
+    "preserve_data_when_disabled": true,
+    "audit_changes": true,
+    "safe_degradation": true
+  },
+  "modules": [
+    {
+      "key": "pipeline",
+      "enabled_by_default": true,
+      "disabled_behavior": "hidden",
+      "preserve_data": true
+    },
+    {
+      "key": "candidates",
+      "enabled_by_default": true,
+      "disabled_behavior": "hidden",
+      "preserve_data": true
+    },
+    {
+      "key": "jobs",
+      "enabled_by_default": true,
+      "disabled_behavior": "hidden",
+      "preserve_data": true
+    },
+    {
+      "key": "clients",
+      "enabled_by_default": true,
+      "disabled_behavior": "hidden",
+      "preserve_data": true
+    },
+    {
+      "key": "tasks",
+      "enabled_by_default": true,
+      "disabled_behavior": "hidden",
+      "preserve_data": true
+    },
+    {
+      "key": "documents",
+      "enabled_by_default": true,
+      "disabled_behavior": "hidden",
+      "preserve_data": true
+    },
+    {
+      "key": "interviews",
+      "enabled_by_default": true,
+      "disabled_behavior": "hidden",
+      "preserve_data": true
+    },
+    {
+      "key": "placements",
+      "enabled_by_default": true,
+      "disabled_behavior": "hidden",
+      "preserve_data": true
+    }
+  ]
+}
