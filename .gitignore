@@ -1,0 +1,21 @@
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Dependencies / builds
+node_modules/
+vendor/
+dist/
+build/
+coverage/
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+*.log
+
+# WordPress packages/build artifacts
+*.zip
