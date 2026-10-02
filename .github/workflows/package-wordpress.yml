@@ -1,0 +1,36 @@
+name: Build WordPress ZIP
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+      - name: Prepare plugin
+        run: |
+          set -euo pipefail
+          mkdir -p dist/stage/evalnor-talent
+          cp wordpress/talent.php dist/stage/evalnor-talent/evalnor-talent.php
+          php -l dist/stage/evalnor-talent/evalnor-talent.php
+          grep -q 'Plugin Name:' dist/stage/evalnor-talent/evalnor-talent.php
+      - name: Build ZIP
+        run: |
+          cd dist/stage
+          zip -qr ../evalnor-talent.zip evalnor-talent
+          cd ..
+          sha256sum evalnor-talent.zip > evalnor-talent.zip.sha256
+          unzip -t evalnor-talent.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: evalnor-talent-wordpress
+          path: |
+            dist/evalnor-talent.zip
+            dist/evalnor-talent.zip.sha256
+          if-no-files-found: error
