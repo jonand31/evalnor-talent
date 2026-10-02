@@ -1,0 +1,9 @@
+{
+  "schema": "evalnor.activity-config/v1",
+  "app_id": "evalnor-talent",
+  "entities": [
+    "candidate-application",
+    "job",
+    "task"
+  ]
+}
