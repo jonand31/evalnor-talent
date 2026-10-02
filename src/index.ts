@@ -4,3 +4,5 @@ export * from './domain/services.js';
 export * from './application/repository.js';
 export * from './application/use-cases.js';
 export * from './adapters/memory/repository.js';
+export * from './application/errors.js';
+export * from './application/events.js';
