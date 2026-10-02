@@ -1,0 +1,26 @@
+{
+  "schema": "evalnor.module-ui/v1",
+  "module": "onboarding",
+  "context": "worker",
+  "actions": [
+    "start",
+    "assign-tasks",
+    "review-progress",
+    "complete"
+  ],
+  "responsive": {
+    "phone": "progress-checklist",
+    "tablet": "split-view",
+    "desktop": "workspace"
+  },
+  "states": [
+    "loading",
+    "empty",
+    "ready",
+    "error",
+    "offline",
+    "module-disabled",
+    "permission-denied"
+  ],
+  "preserve_unsaved_input": true
+}
