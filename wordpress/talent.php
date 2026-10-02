@@ -15,7 +15,7 @@ define('EVALNOR_TALENT_VERSION','0.6.0');
 define('EVALNOR_TALENT_OPTION','evalnor_talent_records_v2');
 define('EVALNOR_TALENT_AUDIT','evalnor_talent_audit_v1');
 
-function evalnor_talent_runtime_available():bool{return class_exists(ProductRuntime::class);}
+function evalnor_talent_runtime_available():bool{return defined('EVALNOR_CORE_VERSION')&&version_compare((string)EVALNOR_CORE_VERSION,'1.2.0','>=')&&class_exists(ProductRuntime::class);}
 function evalnor_talent_register_runtime():void{
  if(!evalnor_talent_runtime_available())return;
  ProductRuntime::register([
