@@ -1,0 +1,1 @@
+export interface OperationalSummary{newCandidates:number;interviewsToday:number;followUpsDue:number;onboardingInProgress:number;approvals:number;hrAttention:number}export interface OperationalReadRepository{summary(organizationId:string,date:string):Promise<OperationalSummary>}
