@@ -1,0 +1,27 @@
+{
+  "schema": "evalnor.task-types/v1",
+  "app_id": "evalnor-talent",
+  "mode": "core-native",
+  "types": [
+    {
+      "key": "candidate-follow-up",
+      "label_key": "evalnor-talent.task.candidate-follow-up",
+      "context": []
+    },
+    {
+      "key": "interview",
+      "label_key": "evalnor-talent.task.interview",
+      "context": []
+    },
+    {
+      "key": "reference-check",
+      "label_key": "evalnor-talent.task.reference-check",
+      "context": []
+    },
+    {
+      "key": "client-follow-up",
+      "label_key": "evalnor-talent.task.client-follow-up",
+      "context": []
+    }
+  ]
+}
