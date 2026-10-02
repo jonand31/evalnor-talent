@@ -1,0 +1,108 @@
+{
+  "schema": "evalnor.talent-suite/v1",
+  "app_id": "evalnor-talent",
+  "modules": {
+    "recruiting": {
+      "enabled_by_default": true,
+      "features": [
+        "recruitment-requests",
+        "jobs",
+        "assigned-recruiters",
+        "custom-pipelines",
+        "candidate-bulk-actions",
+        "candidate-profile",
+        "cv-bank",
+        "tags-folders",
+        "email-templates",
+        "application-forms",
+        "job-archive-reuse",
+        "career-site",
+        "jobboard-connectors",
+        "recruitment-analytics"
+      ]
+    },
+    "employee_conversion": {
+      "enabled_by_default": true,
+      "features": [
+        "hire-candidate",
+        "selective-data-transfer",
+        "create-workforce-profile",
+        "onboarding-protocol"
+      ]
+    },
+    "employee_records": {
+      "enabled_by_default": true,
+      "features": [
+        "employment-history",
+        "job-history",
+        "compensation-history-reference",
+        "unavailability",
+        "departure",
+        "emergency-contact-private"
+      ]
+    },
+    "onboarding_offboarding": {
+      "enabled_by_default": true,
+      "features": [
+        "protocol-templates",
+        "assigned-tasks",
+        "documents",
+        "signoffs",
+        "equipment-checklist",
+        "departure-checklist"
+      ]
+    },
+    "performance": {
+      "enabled_by_default": false,
+      "features": [
+        "evaluation-templates",
+        "assigned-evaluations",
+        "goals",
+        "competencies",
+        "development-plans",
+        "reminders"
+      ]
+    },
+    "employee_portal": {
+      "enabled_by_default": true,
+      "features": [
+        "schedule",
+        "leave",
+        "assigned-hr-tasks",
+        "documents",
+        "acknowledgements",
+        "expenses-mileage"
+      ]
+    },
+    "hr_documents": {
+      "enabled_by_default": true,
+      "features": [
+        "folders",
+        "access-rules",
+        "acknowledgements",
+        "templates",
+        "generated-documents",
+        "external-document-links"
+      ]
+    },
+    "communications": {
+      "enabled_by_default": false,
+      "features": [
+        "internal-news",
+        "categories",
+        "comments",
+        "notifications"
+      ]
+    },
+    "workforce": {
+      "enabled_by_default": true,
+      "provider": "evalnor-core"
+    }
+  },
+  "safeguards": {
+    "human_review_for_hiring": true,
+    "opaque_person_scoring": false,
+    "sensitive_access_separated": true,
+    "preserve_data_when_disabled": true
+  }
+}
