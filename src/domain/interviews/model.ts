@@ -1,0 +1,1 @@
+export interface Interview { id:string; applicationId:string; scheduledAt:string; interviewerUserIds:string[]; mode:'in_person'|'video'|'phone'; status:'scheduled'|'completed'|'cancelled'|'no_show'; notesDocumentIds:string[]; }
