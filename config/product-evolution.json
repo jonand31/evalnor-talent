@@ -1,0 +1,88 @@
+{
+  "schema": "evalnor.product-evolution/v1",
+  "app_id": "evalnor-talent",
+  "domain": "talent-hr",
+  "principles": {
+    "core_shared_semantics": true,
+    "domain_specific_depth": true,
+    "module_safe_toggle": true,
+    "preserve_data_when_disabled": true,
+    "mobile_first": true,
+    "locales": [
+      "fr",
+      "en",
+      "es"
+    ]
+  },
+  "modules": [
+    {
+      "key": "recruiting",
+      "optional": true,
+      "preserve_data": true
+    },
+    {
+      "key": "career-site",
+      "optional": true,
+      "preserve_data": true
+    },
+    {
+      "key": "candidate-bank",
+      "optional": true,
+      "preserve_data": true
+    },
+    {
+      "key": "employee-conversion",
+      "optional": true,
+      "preserve_data": true
+    },
+    {
+      "key": "employee-records",
+      "optional": true,
+      "preserve_data": true
+    },
+    {
+      "key": "onboarding-offboarding",
+      "optional": true,
+      "preserve_data": true
+    },
+    {
+      "key": "performance",
+      "optional": true,
+      "preserve_data": true
+    },
+    {
+      "key": "employee-portal",
+      "optional": true,
+      "preserve_data": true
+    },
+    {
+      "key": "hr-documents",
+      "optional": true,
+      "preserve_data": true
+    },
+    {
+      "key": "communications",
+      "optional": true,
+      "preserve_data": true
+    },
+    {
+      "key": "workforce",
+      "optional": true,
+      "preserve_data": true
+    }
+  ],
+  "ux_priorities": [
+    "recruiter-pipeline",
+    "hr-attention-center",
+    "candidate-360",
+    "employee-360",
+    "onboarding-progress",
+    "approval-queues"
+  ],
+  "automation_candidates": [
+    "candidate-follow-up",
+    "interview-reminder",
+    "onboarding-task-generation",
+    "evaluation-reminder"
+  ]
+}
