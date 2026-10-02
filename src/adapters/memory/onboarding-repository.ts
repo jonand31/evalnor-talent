@@ -1,0 +1,1 @@
+import type { OnboardingPlan } from '../../domain/onboarding/model.js';import type { OnboardingRepository } from '../../application/onboarding.js';export class InMemoryOnboardingRepository implements OnboardingRepository{items=new Map<string,OnboardingPlan>();async save(v:OnboardingPlan){this.items.set(v.id,v)}}
