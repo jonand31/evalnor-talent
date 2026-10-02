@@ -1,0 +1,1 @@
+import {strict as assert} from 'node:assert';import test from 'node:test';import type {Interview} from '../domain/interviews/model.js';test('interview supports multiple interviewers',()=>{const i:Interview={id:'i',applicationId:'a',scheduledAt:'x',interviewerUserIds:['u1','u2'],mode:'video',status:'scheduled',notesDocumentIds:[]};assert.equal(i.interviewerUserIds.length,2)});
