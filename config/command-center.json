@@ -1,0 +1,39 @@
+{
+  "schema": "evalnor.command-center/v1",
+  "module": "recruiting",
+  "home": "recruiter-pipeline",
+  "cards": [
+    "new-candidates",
+    "interviews-today",
+    "follow-ups-due",
+    "onboarding-progress",
+    "approvals",
+    "hr-attention"
+  ],
+  "quick_actions": [
+    "add-candidate",
+    "schedule-interview",
+    "start-onboarding",
+    "assign-task"
+  ],
+  "drilldowns": [
+    "candidate",
+    "application",
+    "interview",
+    "worker"
+  ],
+  "responsive": {
+    "phone": "priority-cards",
+    "tablet": "split-workspace",
+    "desktop": "multi-panel"
+  },
+  "states": [
+    "loading",
+    "empty",
+    "ready",
+    "error",
+    "offline",
+    "module-disabled",
+    "permission-denied"
+  ]
+}
