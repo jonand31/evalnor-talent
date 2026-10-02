@@ -1,0 +1,15 @@
+{
+  "schema": "evalnor.document-types/v1",
+  "app_id": "evalnor-talent",
+  "types": [
+    "resume",
+    "job-document",
+    "interview-note-attachment"
+  ],
+  "sensitive_exclusions": [
+    "government-id",
+    "banking",
+    "health-record",
+    "background-report-copy"
+  ]
+}
