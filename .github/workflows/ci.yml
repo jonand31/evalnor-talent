@@ -9,9 +9,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+        with:
+          repository: jonand31/evalnor-core
+          ref: feature/shared-wordpress-product-runtime
+          path: .evalnor-core
       - uses: actions/setup-node@v4
         with:
           node-version: 22
       - run: npm install
       - run: npm run build
       - run: npm test
+      - run: php -l wordpress/talent.php
+      - run: php -l tests/core-wordpress-integration.php
+      - run: php tests/core-wordpress-integration.php
+        env:
+          EVALNOR_CORE_PATH: ${{ github.workspace }}/.evalnor-core
