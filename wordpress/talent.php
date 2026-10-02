@@ -30,6 +30,7 @@ function evalnor_talent_register_runtime():void{
  ]);
 }
 add_action('plugins_loaded','evalnor_talent_register_runtime',20);
+add_action('admin_init',static function():void{if(evalnor_talent_runtime_available()){evalnor_talent_register_runtime();ProductRuntime::maintain('talent',500);}},20);
 
 register_activation_hook(__FILE__,static function():void{
  if(!evalnor_talent_runtime_available())wp_die('Evalnor Talent requires Evalnor Core 1.2.0 or newer.');
@@ -48,7 +49,7 @@ add_action('admin_notices',static function():void{
 });
 
 add_action('admin_menu',static function():void{
- if(evalnor_talent_runtime_available())add_menu_page('Evalnor Talent','Evalnor Talent','evalnor_manage_talent','talent','evalnor_talent_screen','dashicons-chart-area',58);
+ if(evalnor_talent_runtime_available())add_menu_page('Evalnor Talent','Evalnor Talent',ProductRuntime::menuCapability('talent'),'talent','evalnor_talent_screen','dashicons-chart-area',58);
 });
 function evalnor_talent_screen():void{
  if(!evalnor_talent_can())wp_die('Access denied');
