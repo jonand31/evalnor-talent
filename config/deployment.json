@@ -1,0 +1,28 @@
+{
+  "schema": "evalnor.app-deployment/v1",
+  "appId": "talent",
+  "policy": "customer-choice-no-mandatory-migration",
+  "channels": {
+    "web": {
+      "supported": true,
+      "optional": true
+    },
+    "wordpress": {
+      "supported": false,
+      "optional": true
+    },
+    "desktop": {
+      "supported": true,
+      "optional": true,
+      "onlineFirst": true
+    },
+    "offlineDesktop": {
+      "supported": true,
+      "optional": true,
+      "authoritative": false
+    }
+  },
+  "combinationsAllowed": true,
+  "sourceOfTruth": "online-core",
+  "coreRequired": true
+}
