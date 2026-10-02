@@ -1,0 +1,18 @@
+{
+  "schema": "evalnor.party-roles/v1",
+  "app_id": "evalnor-talent",
+  "roles": [
+    {
+      "role": "candidate",
+      "label_key": "evalnor-talent.party.candidate"
+    },
+    {
+      "role": "employer-contact",
+      "label_key": "evalnor-talent.party.employer-contact"
+    },
+    {
+      "role": "client",
+      "label_key": "evalnor-talent.party.client"
+    }
+  ]
+}
