@@ -72,4 +72,4 @@ function evalnor_talent_screen():void{
  echo '</tbody></table><p><a class="button" href="'.esc_url(rest_url('evalnor/talent/v1/export')).'">Export JSON</a></p></div>';
 }
 add_action('rest_api_init',static function():void{if(evalnor_talent_runtime_available())ProductRuntime::registerRestRoutes('talent');},20);
-add_filter('evalnor_app_home',static fn(string $url):string=>evalnor_talent_can()?admin_url('admin.php?page=talent'):$url);
+add_filter('evalnor_app_home_talent',static fn(string $url):string=>evalnor_talent_can()?admin_url('admin.php?page=talent'):$url);
